@@ -100,7 +100,7 @@ public class SearchTweetsTest extends TwitterBaseClass{
 			PublicLibrary.generateReport(DataGenerationTwitterAPI.topTweets,   prop.getProperty("twitterURL"), screenShotPath, tweetScreenShotList, DataGenerationTwitterAPI.topFriends);
 
 			/*Call the Search Friend method*/
-			//searchFriend();
+			searchFriend();
 
 		}
 		catch (Exception e) 
