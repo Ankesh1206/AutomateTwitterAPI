@@ -8,8 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import PublicUtilities.Constants;
 import PublicUtilities.PublicLibrary;
@@ -30,7 +30,7 @@ public class SearchTweetsTest extends TwitterBaseClass{
 		lib = new PublicLibrary();
 	}
 
-	@BeforeMethod
+	@BeforeTest
 	public void setUp()
 	{
 		try {
@@ -151,7 +151,7 @@ public class SearchTweetsTest extends TwitterBaseClass{
 	}
 
 
-	@AfterMethod
+	@AfterTest
 	public void tearDown()
 	{
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
